@@ -14,7 +14,9 @@ REM Maintained by Lojical
 
 SET output=..\AM2R_%version%
 
-ECHO p0
+if exist output.txt del output.txt
+
+ECHO 0 >output.txt
 
 REM ECHO AM2R v11 to v%version% Patching Utility
 REM ECHO ----------------------------------
@@ -50,7 +52,7 @@ if "%~x4" == ".zip" (
 	echo D | xcopy /s /v /y /q "%~4" %output%
 )
 
-ECHO p25
+ECHO 25 >>output.txt
 
 if not exist %output% (
 	ECHO.
@@ -88,7 +90,7 @@ REM ECHO Patching AM2R.exe...
 REM utilities\floating\flips.exe --apply patch_data\AM2R.bps %output%\data.win %output%\AM2R.exe
 utilities\xdelta\xdelta3-3.1.0-x86_64.exe -f -vv -d -s %output%\data.win patch_data\AM2R.xdelta %output%\AM2R.exe
 REM ECHO.
-ECHO p50
+ECHO 50 >>output.txt
 
 
 if not "%ErrorLevel%"=="0" (
@@ -127,7 +129,7 @@ if "%3"=="6" (
 	xcopy /s /v /y /q patch_data\HDR_HQ_in-game_music %output%
 )
 
-ECHO p75
+ECHO 75 >>output.txt
 
 
 rem PACKAGE ANDROID APK
@@ -159,10 +161,12 @@ if "%ReturnCode%"=="1" (
     del /q %output%\data.win
 )
 
-ECHO p100
+ECHO 100 >>output.txt
 
 REM ECHO.
 REM ECHO The operation was completed successfully. See you next mission!
+
+del output.txt
 
 exit /b
 
