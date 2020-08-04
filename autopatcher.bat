@@ -12,11 +12,13 @@ REM AM2R Patching Utility
 REM Written by Wanderer
 REM Maintained by Lojical
 
-SET output=AM2R_%version%
+SET output=..\AM2R_%version%
 
-ECHO AM2R v11 to v%version% Patching Utility
-ECHO ----------------------------------
-ECHO.
+ECHO p0
+
+REM ECHO AM2R v11 to v%version% Patching Utility
+REM ECHO ----------------------------------
+REM ECHO.
 
 cd "%~dp0"
 
@@ -48,6 +50,8 @@ if "%~x4" == ".zip" (
 	echo D | xcopy /s /v /y /q "%~4" %output%
 )
 
+ECHO p25
+
 if not exist %output% (
 	ECHO.
 	ECHO Extraction failed!
@@ -63,7 +67,7 @@ ECHO Extraction successful.
 ECHO.
 
 
-utilities\gui\DropDownBox.exe "Windows;Android" "Choose your target platform:" "Platform" /I:0 /RI /C:13 >NUL
+REM utilities\gui\DropDownBox.exe "Windows;Android" "Choose your target platform:" "Platform" /I:0 /RI /C:13 >NUL
 REM SET ReturnCode=%ErrorLevel%
 
 if "%ReturnCode%"=="0" (
@@ -74,16 +78,18 @@ if "%ReturnCode%"=="0" (
 if "%ReturnCode%"=="2" (
 	if not "%JavaCode%" == "0" (
 		rmdir /s /q %output%
-		utilities\gui\MessageBox.exe "Java was not found by this patcher! Java is required to sign the APK (app) and a signature is required to install to Android. Please do a standard installation of Java to this PC to create the Android version." "Warning!" "OK" "Exclamation" > nul
+		REM utilities\gui\MessageBox.exe "Java was not found by this patcher! Java is required to sign the APK (app) and a signature is required to install to Android. Please do a standard installation of Java to this PC to create the Android version." "Warning!" "OK" "Exclamation" > nul
 		exit /b
 	)
 )
 
 
-ECHO Patching AM2R.exe...
+REM ECHO Patching AM2R.exe...
 REM utilities\floating\flips.exe --apply patch_data\AM2R.bps %output%\data.win %output%\AM2R.exe
-utilities\xdelta\xdelta3-3.1.0-x86_64.exe -f -d -s %output%\data.win patch_data\AM2R.xdelta %output%\AM2R.exe
-ECHO.
+utilities\xdelta\xdelta3-3.1.0-x86_64.exe -f -vv -d -s %output%\data.win patch_data\AM2R.xdelta %output%\AM2R.exe
+REM ECHO.
+ECHO p50
+
 
 if not "%ErrorLevel%"=="0" (
 	ECHO Patching failed!
@@ -121,6 +127,8 @@ if "%3"=="6" (
 	xcopy /s /v /y /q patch_data\HDR_HQ_in-game_music %output%
 )
 
+ECHO p75
+
 
 rem PACKAGE ANDROID APK
 IF "%ReturnCode%"=="2" (
@@ -151,13 +159,10 @@ if "%ReturnCode%"=="1" (
     del /q %output%\data.win
 )
 
-ECHO.
-ECHO The operation was completed successfully. See you next mission!
+ECHO p100
 
-IF "%ReturnCode%"=="1" explorer /select,%output%
-IF "%ReturnCode%"=="2" explorer /select,AndroidM2R_%version%-signed.apk
-
-timeout /t 8
+REM ECHO.
+REM ECHO The operation was completed successfully. See you next mission!
 
 exit /b
 
