@@ -75,7 +75,7 @@ if "%ReturnCode%"=="2" (
 
 ECHO Patching AM2R.exe...
 REM utilities\floating\flips.exe --apply patch_data\AM2R.bps %output%\data.win %output%\AM2R.exe
-utilities\xdelta\xdelta3-3.1.0-x86_64.exe -f -d -s %output%\data.win patch_data\AM2R.xdelta %output%\AM2R.exe
+utilities\xdelta\xdelta3.exe -f -d -s %output%\data.win patch_data\AM2R.xdelta %output%\AM2R.exe
 ECHO.
 
 if not "%ErrorLevel%"=="0" (
@@ -129,7 +129,7 @@ IF "%ReturnCode%"=="2" (
 	
 	ECHO Patching game.droid...
 	REM utilities\floating\flips.exe --apply patch_data\droid.bps utilities\android\assets\AM2R.exe utilities\android\assets\game.droid
-	utilities\xdelta\xdelta3-3.1.0-x86_64.exe -f -d -s utilities\android\assets\data.win patch_data\droid.xdelta utilities\android\assets\game.droid
+	utilities\xdelta\xdelta3.exe -f -d -s utilities\android\assets\data.win patch_data\droid.xdelta utilities\android\assets\game.droid
 
 	call utilities\android\apk_package_assets.bat
 
