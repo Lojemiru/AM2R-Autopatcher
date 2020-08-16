@@ -714,7 +714,23 @@ CHANGELOG
 - BladeBots now despawn when outside of a room.
 - Other minor fixes.
 
-
+1.5.2
+- Enabled negative X offsets for title overlays. New format is at the top of the readme file, as usual.
+- Subscreen ammo sprites updated.
+- Re-implemented the nighttime Landing Site Septoggs.
+- Updated the Extras Menu to hide shader options if they are unsupported on the target platform.
+- Reduced the Queen Metroid's body contact damage during the first movement phase.
+- Removed all downwards waterfall room transitions except the very top one.
+- Fixed widescreen language variant title overlay detection.
+- Fixed Linux Area Intro translation loading.
+- Fixed display scaling when widescreen is enabled; the game should no longer extend beyond screens with non-standard aspect ratios.
+- Fixed a hardlock in the Distribution Center on Hard/Fusion Difficulty by disabling bomb block regeneration in one room.
+- Fixed several widescreen tiling errors.
+- Fixed a few more Serris AI bugs, including the notorious spinning bug.
+- Fixed an animation bug that affected the Tester's cannons.
+- Fixed a scrolling bug in the Display Options menu on Android.
+- Fixed a camera snapping issue in widescreen.
+- Other minor fixes.
 
 
 

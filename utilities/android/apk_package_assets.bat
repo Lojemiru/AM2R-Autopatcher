@@ -19,47 +19,6 @@ aapt add -f -v AM2RWrapper.apk^
  assets/lang/fonts/Acknowledge_TT_BRK.ttf^
  assets/lang/fonts/Glasstown_NBP.ttf^
  assets/lang/fonts/uni_05_53.ttf^
- assets/lang/headers/castellano_a1_f24_b0_c3_d19_e21.png^
- assets/lang/headers/castellano_a2_f31_b0_c3_d26_e28.png^
- assets/lang/headers/castellano_a3_f30_b0_c3_d25_e27.png^
- assets/lang/headers/castellano_a4_f19_b0_c3_d14_e16.png^
- assets/lang/headers/castellano_a5_f32_b0_c3_d27_e29.png^
- assets/lang/headers/castellano_a7_f19_b0_c7_d9_e17.png^
- assets/lang/headers/castellano_a8_f20_b0_c7_d15_e17.png^
- assets/lang/headers/deutsch_a1_f26_b0_c3_d21_e23.png^
- assets/lang/headers/deutsch_a2_f22_b0_c3_d17_e19.png^
- assets/lang/headers/deutsch_a3_f28_b0_c3_d23_e25.png^
- assets/lang/headers/deutsch_a4_f19_b0_c3_d14_e16.png^
- assets/lang/headers/deutsch_a5_f28_b0_c3_d23_e25.png^
- assets/lang/headers/deutsch_a7_f19_b0_c7_d9_e17.png^
- assets/lang/headers/francais_a1_f22_b0_c3_d17_e19.png^
- assets/lang/headers/francais_a2_f25_b0_c3_d20_e22.png^
- assets/lang/headers/francais_a3_f30_b0_c3_d25_e27.png^
- assets/lang/headers/francais_a4_f18_b0_c3_d13_e15.png^
- assets/lang/headers/francais_a5_f32_b0_c3_d27_e29.png^
- assets/lang/headers/francais_a7_f19_b0_c7_d9_e17.png^
- assets/lang/headers/francais_a8_f20_b0_c7_d15_e17.png^
- assets/lang/headers/italiano_a1_f26_b0_c3_d21_e23.png^
- assets/lang/headers/italiano_a2_f26_b0_c3_d21_e23.png^
- assets/lang/headers/italiano_a3_f32_b0_c3_d27_e29.png^
- assets/lang/headers/italiano_a4_f19_b0_c3_d14_e16.png^
- assets/lang/headers/italiano_a5_f33_b0_c3_d28_e30.png^
- assets/lang/headers/italiano_a7_f19_b0_c7_d9_e17.png^
- assets/lang/headers/italiano_a8_f20_b0_c7_d15_e17.png^
- assets/lang/headers/japanese_a1_f16_b0_c3_d11_e13.png^
- assets/lang/headers/japanese_a2_f16_b0_c3_d11_e13.png^
- assets/lang/headers/japanese_a3_f16_b0_c3_d11_e13.png^
- assets/lang/headers/japanese_a4_f15_b0_c3_d10_e12.png^
- assets/lang/headers/japanese_a5_f18_b0_c3_d13_e15.png^
- assets/lang/headers/japanese_a7_f19_b0_c7_d9_e17.png^
- assets/lang/headers/japanese_a8_f20_b0_c3_d15_e17.png^
- assets/lang/headers/russian_a1_f23_b0_c3_d18_e20.png^
- assets/lang/headers/russian_a2_f24_b0_c3_d19_e21.png^
- assets/lang/headers/russian_a3_f22_b0_c3_d17_e19.png^
- assets/lang/headers/russian_a4_f17_b0_c3_d12_e14.png^
- assets/lang/headers/russian_a5_f30_b0_c3_d25_e27.png^
- assets/lang/headers/russian_a7_f19_b0_c7_d9_e17.png^
- assets/lang/headers/russian_a8_f19_b0_c3_d14_e16.png^
  assets/musalphafight.ogg^
  assets/musancientguardian.ogg^
  assets/musarachnus.ogg^
