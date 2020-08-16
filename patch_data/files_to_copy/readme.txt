@@ -1,5 +1,5 @@
 PROJECT AM2R
-v1.5.1
+v1.5.2
 
 bit.ly/AM2Rblog
 reddit.com/r/AM2R
@@ -100,6 +100,7 @@ Title images: Place your custom image within the /lang/titles/ folder. It must u
 	- Replace 'language' with the same name as the language file you use.
 	- Replace '000' after both 'x' and 'y' with the necessary coordinate offsets. 
 	- For example, a valid title file might be named 'english_x048_y032.png'
+	- If you need a negative 'x' title offset (for say, widescreen) simply add a minus sign in front of the 'x' coordinate: 'language_-x000_y000.png'.
 	
 Backgrounds: Place your custom image in the same folder as your AM2R datafile. (AM2R.exe on Windows, game.unx on Linux) It must use the following name format: 'titlebackground_f00_s00.png'
 	- Replace the '00' after 'f' with the number of frames in the background image.
