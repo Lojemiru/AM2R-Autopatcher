@@ -820,11 +820,11 @@ Craig Kostelecky
 Metroid3D
 
 Art Lead
-Dannon "Shmegleskimo" Yates
+Dannon 'Shmegleskimo' Yates
 
 Art
 ShirtyScarab
-Cooper
+Cooper Garvin
 Chris 'Messianic' Oliveira
 ChloePlz
 
