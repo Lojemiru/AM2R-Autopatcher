@@ -54,7 +54,6 @@ KeyboardButtonExit, JoystickButtonExit and XBJoypadButtonExit can be used to
 customize which button / key is used to exit. Default is ESC for keyboard,
 Back for XInput, and button 10 for DirectInput.
 
-
 FAQ Continued Revisions
 - Did DoctorM64 have anything to do with this?
 DoctorM64 has nothing to do with this. He did not supply the source code.
