@@ -54,6 +54,14 @@ KeyboardButtonExit, JoystickButtonExit and XBJoypadButtonExit can be used to
 customize which button / key is used to exit. Default is ESC for keyboard,
 Back for XInput, and button 10 for DirectInput.
 
+
+FAQ Continued Revisions
+- Did DoctorM64 have anything to do with this?
+DoctorM64 has nothing to do with this. He did not supply the source code.
+
+- How did you get the source code for AM2R?
+https://gitlab.com/users/yellowafterlife/projects
+
 - The Fusion suit doesn't change colors for the different types. Help!
 AM2R requires DirectX9.0 installed and hardware shader support to properly 
 display art in Fusion mode, allow the 8-bit shader to work, and enable custom 
@@ -64,14 +72,6 @@ features will not work properly.
 The required DirectX version (June 2010) can be found on Microsoft's website here:
 https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B14/directx_Jun2010_redist.exe
 
-
-FAQ Continued Revisions
-- Did DoctorM64 have anything to do with this?
-DoctorM64 has nothing to do with this. He did not supply the source code.
-
-- How did you get the source code for AM2R?
-https://gitlab.com/users/yellowafterlife/projects
-
 - Will you add Ridley?
 Ridley will not be added to AM2R, as he does not fit well within the story of AM2R. 
 In addition, no other bosses will be added to the game.
@@ -80,11 +80,9 @@ In addition, no other bosses will be added to the game.
 No. The development team believes that the world of AM2R is complete, and we are 
 focusing on improving what exists rather than adding totally new content.
 
-- Will you add mod support?
-Outside of the damage modifiers, no other user modifications are currently planned.
-
 - What's the most up-to-date version?
-The latest version of AM2R will always be posted at www.reddit.com/r/AM2R. 
+The latest version of AM2R will always be posted at www.reddit.com/r/AM2R and will
+automatically be installed if you are using the AM2RLauncher.
 
 - What platforms is AM2R availible on?
 Currently, AM2R runs natively on Windows, Android, and Linux platforms.
@@ -92,12 +90,12 @@ Linux support is provided as-is and is not guaranteed to run on any given machin
 AM2R is capable of running on older Mac devices using Wine.
 
 - Will you release the source code?
-We currently have no plans to release the source code.
+It's public! Check out the AM2R-Community-Updates repository on GitHub.
 
 - How do I load custom title images/backgrounds/area intros?
 
 Title images: Place your custom image within the /lang/titles/ folder. It must use the following name format: 'language_x000_y000.png'.
-	- Replace 'language' with the same name as the language file you use.
+	- Replace 'language' with the same name as the language file you use. This is the name in the file header, not the filename. 
 	- Replace '000' after both 'x' and 'y' with the necessary coordinate offsets. 
 	- For example, a valid title file might be named 'english_x048_y032.png'
 	- If you need a negative 'x' title offset (for say, widescreen) simply add a minus sign in front of the 'x' coordinate: 'language_-x000_y000.png'.
