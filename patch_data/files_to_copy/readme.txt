@@ -31,6 +31,9 @@ FAQ
 Look in your AppData/Local folder, it's usually in this location:
 C:\Users\[Your User Name]\AppData\Local\AM2R
 
+For Linux, it can be found at this location:
+/home/[Your User Name]/.config/AM2R
+
 - Why are my screenshots so big?
 The screenshots are now taken with the size of the displayed window.
 If you want the classic 320x240 screenshots, set the display to Windowed 1x
@@ -83,7 +86,7 @@ focusing on improving what exists rather than adding totally new content.
 The latest version of AM2R will always be posted at www.reddit.com/r/AM2R and will
 automatically be installed if you are using the AM2RLauncher.
 
-- What platforms is AM2R availible on?
+- What platforms is AM2R available on?
 Currently, AM2R runs natively on Windows, Android, and Linux platforms.
 Linux support is provided as-is and is not guaranteed to run on any given machine.
 AM2R is capable of running on older Mac devices using Wine.
